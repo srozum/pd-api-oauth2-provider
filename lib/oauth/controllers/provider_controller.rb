@@ -14,7 +14,7 @@ module OAuth
 
       def token
         @client_application = ClientApplication.find_by_key(params[:client_id])
-        if @client_application.secret != params[:client_secret]
+        if @client_application.nil? || (@client_application.secret != params[:client_secret])
           oauth2_error "invalid_client"
           return
         end
