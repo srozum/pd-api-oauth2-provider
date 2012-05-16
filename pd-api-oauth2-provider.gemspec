@@ -20,11 +20,17 @@ Gem::Specification.new do |s|
     ".document",
     ".rvmrc",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "lib/oauth/controllers/application_controller_methods.rb",
+    "lib/oauth/controllers/provider_controller.rb",
+    "lib/oauth/provider/authorizer.rb",
+    "lib/oauth/rack/oauth_filter.rb",
     "lib/pd-api-oauth2-provider.rb",
+    "pd-api-oauth2-provider.gemspec",
     "test/helper.rb",
     "test/test_pd-api-oauth2-provider.rb"
   ]
