@@ -11,7 +11,6 @@ module OAuth
       end
       
       def login_required
-        oauth_required
         access_denied and return false unless current_user
       end
             
